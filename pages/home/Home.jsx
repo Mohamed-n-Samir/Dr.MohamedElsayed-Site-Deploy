@@ -1,6 +1,6 @@
 import React from "react";
 import Section1 from "../../src/Components/Section1/Section1";
-import Section2 from "../../src/Components/Section2(leatest vlog)/Section2";
+import Section2 from "../../src/Components/Section2/Section2";
 
 const Home = () => {
 	return (
