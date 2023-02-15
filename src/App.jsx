@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import i18next from "i18next";
-import Home from "../pages/home/Home";
+import Home from "../pages/home/Home"
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Navbar1 from "./Components/Navbar1/Navbar1";
