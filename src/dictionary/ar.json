@@ -1,0 +1,25 @@
+{
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "contact": "تواصل معنا",
+    "english": "English",
+    "arabic": "العربية",
+    "vlogs": "فيديوهات",
+    "blogs": "مواضيع",
+    "lectures": "محاضرات",
+    "quickLinks": "روابط سريعة",
+    "latestBlogs": "اخر المواضيع",
+	"title" : "ورود",
+	"liveBroadcast": "بث مباشر",
+	"profile": "صفحتي الشخصيه",
+	"BuyCredit": "شراء رصيد",
+    "register": "انشاء حساب",
+	"login": "تسجيل الدخول",
+	"searchBtn": "ابحث هنا",
+	"searchPlaceHolder": "ابحث عن المحاضرة...",
+	"viewBtn": "شاهد الكل",
+	"learning level": "الثالث الثانوي",
+	"buy": "اشتري الان",
+    "details":"التفاصيل"
+
+}

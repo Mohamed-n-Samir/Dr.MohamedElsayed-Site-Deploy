@@ -1,0 +1,35 @@
+/* Start after header section > (Section1) */
+
+.lectures {
+	position: relative;
+	height: fit-content;
+	flex-direction: column;
+	display: flex;
+	/* padding: 5rem 0; */
+}
+
+.intro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.level {
+	color: black;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.view-all {
+	background-color: var(--purple-color);
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */

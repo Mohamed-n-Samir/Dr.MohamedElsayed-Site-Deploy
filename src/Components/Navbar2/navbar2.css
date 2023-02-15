@@ -1,0 +1,46 @@
+/* Navbar2 Style */
+
+.navbar2 {
+	height: fit-content;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+}
+
+.link2 {
+	font-size: 1.8rem;
+	padding: 1.5rem 1rem;
+}
+
+.link3 {
+	font-size: 1.4rem;
+	padding: 1.5rem 1rem;
+}
+
+.link3 span {
+	color: var(--white-color);
+	margin: 0 0.5rem;
+}
+
+.link3 .language-btn {
+	font-size: 1.4rem;
+	border: 0.2rem solid var(--purple-color);
+	height: 100%;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	-webkit-border-radius: 0.3rem;
+	-moz-border-radius: 0.3rem;
+	-ms-border-radius: 0.3rem;
+	-o-border-radius: 0.3rem;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.link3 .language-btn:hover {
+	background-color: var(--purple-color);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */

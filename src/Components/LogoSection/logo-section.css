@@ -1,0 +1,55 @@
+/* Logo and search Section */
+
+.search-parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 40%;
+	left: 50%;
+	gap: 1rem;
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	width: 100%;
+}
+
+.name-logo {
+	text-align: center;
+	color: var(--white-color);
+	font-size: 6rem;
+}
+
+.search-box {
+	display: flex;
+}
+
+#lectures-search {
+	width: 70%;
+	border: none;
+	border-radius: 0.3rem 0 0 0.3rem;
+	-webkit-border-radius: 0.3rem 0 0 0.3rem;
+	-moz-border-radius: 0.3rem 0 0 0.3rem;
+	-ms-border-radius: 0.3rem 0 0 0.3rem;
+	-o-border-radius: 0.3rem 0 0 0.3rem;
+	padding: 0.6rem 1.2rem;
+	outline: none;
+	color: var(--black-color);
+}
+
+.search-button {
+	width: 30%;
+	background-color: var(--orange-color);
+	font-size: 2rem;
+	height: 5rem;
+	border-radius: 0 0.3rem 0.3rem 0;
+	-webkit-border-radius: 0 0.3rem 0.3rem 0;
+	-moz-border-radius: 0 0.3rem 0.3rem 0;
+	-ms-border-radius: 0 0.3rem 0.3rem 0;
+	-o-border-radius: 0 0.3rem 0.3rem 0;
+	cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */

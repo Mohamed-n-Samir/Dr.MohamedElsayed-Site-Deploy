@@ -1,0 +1,14 @@
+/* Header Style */
+
+#header {
+	background: linear-gradient(var(--yellow-color), var(--purple-color)),
+		url("/headerSection.jpg") center center;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 45rem;
+	position: relative;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */

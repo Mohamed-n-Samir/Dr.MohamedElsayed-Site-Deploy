@@ -1,0 +1,102 @@
+/* Globals */
+
+:root {
+	width: 100%;
+	/* Font Styling */
+	font-family: "Cairo", sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-size: 10px;
+	letter-spacing: normal;
+	/* Global Variables */
+	--black-color: #000000;
+	--white-color: #ffffff;
+	--gray-color: #c0c0c0;
+	--yellow-color: yellow;
+	--orange-color: #e18a07;
+	--danger-color: #f84242;
+	--success-color: #21b632;
+	--purple-color: #6600cc;
+	--red-color: #cc0000;
+	/* others */
+	--price-le: "free";
+}
+
+
+@media (max-width: 800px) {
+	:root {
+		font-size: 8px;
+		
+	}
+	.name-logo{
+		font-size: 5rem;
+
+	}
+}
+@media (max-width: 900px) {
+	.main-nav {
+		background-color: var(--black-color);
+	}
+}
+
+@media (max-width: 600px) {
+	:root { 
+		font-size: 7px;
+	}
+}
+
+@media (max-width: 400px) {
+	:root { 
+		font-size: 6px;
+	}
+}
+
+@media (max-width: 500px) {
+	.name-logo{
+		font-size: 4rem;
+	}
+	.container {
+		width: 95%;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white-color);
+}
+
+ul {
+	list-style: none;
+}
+
+hr {
+	height: 0.5px;
+	border: none;
+	background-color: var(--gray-color);
+	margin: 40px auto !important;
+}
+
+img {
+	width: 18px;
+	-webkit-user-drag: none;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border: none;
+	color: var(--white-color);
+}
