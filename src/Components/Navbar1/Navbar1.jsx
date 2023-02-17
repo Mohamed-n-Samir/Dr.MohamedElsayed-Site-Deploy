@@ -54,7 +54,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/lectures"
+									to="/Dr.MohamedElsayed-Site-Deploy/lectures"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
