@@ -12,8 +12,11 @@ function App() {
 			<Navbar1 />
 			<Header />
 			<Routes>
-				<Route path="/login" element={<div>login</div>} exact />
-				{/* <Route path="/login" element={<div>login</div>} exact /> */}
+				<Route
+					path="/Dr.MohamedElsayed-Site-Deploy/login"
+					element={<div>login</div>}
+					exact
+				/>
 				<Route
 					path="/Dr.MohamedElsayed-Site-Deploy/profile"
 					element={<div>profile</div>}

@@ -14,7 +14,7 @@ const Navbar1 = () => {
 	let activeStyle = 'active-style';
 
 	const { pathname } = useLocation();
-	const isActive = ["/", "/home"].includes(pathname);
+	const isActive = ["/Dr.MohamedElsayed-Site-Deploy/", "/Dr.MohamedElsayed-Site-Deploy/home"].includes(pathname);
 	return (
 		<>
 			{isLargeScreen && (
@@ -24,7 +24,7 @@ const Navbar1 = () => {
 						<ul className="links">
 							<li className="link">
 								<NavLink
-									to="/"
+									to="/Dr.MohamedElsayed-Site-Deploy/"
 									className={() =>
 										isActive ? activeStyle : undefined
 									}
@@ -34,7 +34,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/vlogs"
+									to="/Dr.MohamedElsayed-Site-Deploy/vlogs"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
@@ -44,7 +44,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/blogs"
+									to="/Dr.MohamedElsayed-Site-Deploy/blogs"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
@@ -64,7 +64,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/liveBroadcast"
+									to="/Dr.MohamedElsayed-Site-Deploy/liveBroadcast"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
@@ -74,7 +74,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/profile"
+									to="/Dr.MohamedElsayed-Site-Deploy/profile"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
@@ -84,7 +84,7 @@ const Navbar1 = () => {
 							</li>
 							<li className="link">
 								<NavLink
-									to="/buyCredit"
+									to="/Dr.MohamedElsayed-Site-Deploy/buyCredit"
 									className={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}

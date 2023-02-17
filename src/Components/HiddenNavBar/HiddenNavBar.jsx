@@ -11,7 +11,7 @@ const HiddenNavBar = () => {
 	let activeStyle = "active-style";
 
 	const { pathname } = useLocation();
-	const isActive = ["/", "/home"].includes(pathname);
+	const isActive = ["/Dr.MohamedElsayed-Site-Deploy/", "/Dr.MohamedElsayed-Site-Deploy/home"].includes(pathname);
 	const menuRef = useRef();
 	const [isVisible, setVisible] = useState(false);
 	useEffect(() => {
@@ -56,7 +56,7 @@ const HiddenNavBar = () => {
 				<ul>
 					<li className="link4">
 						<NavLink
-							to="/"
+							to="/Dr.MohamedElsayed-Site-Deploy/"
 							className={() =>
 								isActive ? activeStyle : undefined
 							}
@@ -66,7 +66,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/vlogs"
+							to="/Dr.MohamedElsayed-Site-Deploy/vlogs"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
@@ -76,7 +76,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/blogs"
+							to="/Dr.MohamedElsayed-Site-Deploy/blogs"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
@@ -86,7 +86,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/lectures"
+							to="/Dr.MohamedElsayed-Site-Deploy/lectures"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
@@ -96,7 +96,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/liveBroadcast"
+							to="/Dr.MohamedElsayed-Site-Deploy/liveBroadcast"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
@@ -106,7 +106,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/profile"
+							to="/Dr.MohamedElsayed-Site-Deploy/profile"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
@@ -116,7 +116,7 @@ const HiddenNavBar = () => {
 					</li>
 					<li className="link4">
 						<NavLink
-							to="/buyCredit"
+							to="/Dr.MohamedElsayed-Site-Deploy/buyCredit"
 							className={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}

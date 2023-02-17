@@ -17,7 +17,7 @@ const Section1 = () => {
 				<div className="intro container">
 					<h2 className="level">{t("learning level")}</h2>
 					<button onClick={() => {
-								navigate("/vlogs");
+								navigate("/Dr.MohamedElsayed-Site-Deploy/vlogs");
 
 					}} className="view-all">{t("viewBtn")}</button>
 				</div>

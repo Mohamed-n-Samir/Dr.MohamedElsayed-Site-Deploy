@@ -32,7 +32,7 @@ const HeaderSection = () => {
 					<div className="after-header">
 						<span
 							onClick={() => {
-								navigate("/");
+								navigate("/Dr.MohamedElsayed-Site-Deploy/");
 							}}
 						>
 							{t("home")}
