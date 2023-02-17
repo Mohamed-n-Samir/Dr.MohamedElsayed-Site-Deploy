@@ -21,7 +21,7 @@ function App() {
 				<Route path="/Dr.MohamedElsayed-Site-Deploy/lectures" element={<div>lectures</div>} exact />
 				<Route path="/Dr.MohamedElsayed-Site-Deploy/profile" element={<div>profile</div>} exact />
 				<Route path="/Dr.MohamedElsayed-Site-Deploy/buyCredit" element={<div>buy-credit</div>} exact />
-				{["/Dr.MohamedElsayed-Site-Deploy/home", "/Dr.MohamedElsayed-Site-Deploy/"].map((path, index) => (
+				{["/Dr.MohamedElsayed-Site-Deploy/home", "/"].map((path, index) => (
 					<Route path={path} element={<Home />} key={index} />
 				))}
 			</Routes>
