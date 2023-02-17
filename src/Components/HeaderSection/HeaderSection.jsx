@@ -10,7 +10,7 @@ const HeaderSection = () => {
 
 	return (
 		<>
-			{pathname === "/" || pathname === "/home" ? (
+			{pathname === "/Dr.MohamedElsayed-Site-Deploy/" || pathname === "/Dr.MohamedElsayed-Site-Deploy/home" ? (
 				<div className="search-parent">
 					<h1 className="name-logo">DR.Mohamed ElSayed</h1>
 
@@ -28,7 +28,7 @@ const HeaderSection = () => {
 				</div>
 			) : (
 				<div className="search-parent">
-					<h1 className="name-logo">{t(`${pathname.slice(1)}`)}</h1>
+					<h1 className="name-logo">{t(`${pathname.split("/").pop()}`)}</h1>
 					<div className="after-header">
 						<span
 							onClick={() => {
@@ -39,7 +39,7 @@ const HeaderSection = () => {
 						</span>
 						<span style={{ margin: "0 1rem" }}> / </span>
 						<span className="path-name">
-							{t(`${pathname.slice(1)}`)}
+							{t(`${pathname.split("/").pop()}`)}
 						</span>
 					</div>
 				</div>
