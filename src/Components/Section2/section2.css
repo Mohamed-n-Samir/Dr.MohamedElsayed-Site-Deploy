@@ -8,11 +8,17 @@
 	-webkit-tap-highlight-color: transparent;
 	-webkit-text-size-adjust: none;
 	box-sizing: border-box;
-	text-align: center;
 	padding:4rem 0;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
+
 }
+/* .section-title {
+	text-align: center;
+
+} */
+
 .sectiontitle-design .icons {
 	background: var(--purple-color);
 }

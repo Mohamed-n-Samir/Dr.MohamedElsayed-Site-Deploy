@@ -1,28 +1,30 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./hidden-nav-bar.css";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { useMediaQuery } from "react-responsive";
+import { NavLink, useLocation } from "react-router-dom";
 
 const HiddenNavBar = () => {
-	document.addEventListener("click", (e) => {
-		if (
-			e.target.id !== "sidebar" &&
-			e.target.id !== "toggle" &&
-			e.target.className !== "logo"
-		) {
-			removeClass();
-		}
-	});
 
-	const [isActive, setActive] = useState(false);
+	let activeStyle = "active-style";
+
+	const { pathname } = useLocation();
+	const isActive = ["/", "/home"].includes(pathname);
+	const menuRef = useRef();
+	const [isVisible, setVisible] = useState(false);
+	useEffect(() => {
+		let handler = (e) => {
+			if(!menuRef.current.contains(e.target)){
+				setVisible(false)
+			}
+		}
+		document.addEventListener("click",handler);
+	})
 
 	const toggleClass = () => {
-		setActive(!isActive);
-	};
-	const removeClass = () => {
-		setActive(false);
+		setVisible(!isVisible);
 	};
 
 	const [t, i18n] = useTranslation();
@@ -31,21 +33,21 @@ const HiddenNavBar = () => {
 	});
 
 	return (
-		<div dir="ltr">
+		<nav dir="ltr" ref = {menuRef}>
 			<div className="container" style={{ position: "relative" }}>
 				<div className="icon">
 					<div
 						id="toggle"
-						className={isActive ? "active" : null}
+						className={isVisible ? "active" : null}
 						onClick={toggleClass}
 					></div>
 				</div>
 			</div>
 
-			<div id="sidebar" className={isActive ? "active" : null}>
+			<div id="sidebar" className={isVisible ? "active" : null}>
 				<img
 					className="logo"
-					src="./msLogo.png"
+					src="./logo1.svg"
 					alt="Logo"
 					style={{
 						width: "40%",
@@ -53,28 +55,79 @@ const HiddenNavBar = () => {
 				/>
 				<ul>
 					<li className="link4">
-						<a href="/#index.html">{t("home")}</a>
+						<NavLink
+							to="/"
+							className={() =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("home")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("vlogs")}</a>
+						<NavLink
+							to="/vlogs"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("vlogs")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("blogs")}</a>
+						<NavLink
+							to="/blogs"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("blogs")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("lectures")}</a>
+						<NavLink
+							to="/lectures"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("lectures")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("liveBroadcast")}</a>
+						<NavLink
+							to="/liveBroadcast"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("liveBroadcast")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("profile")}</a>
+						<NavLink
+							to="/profile"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("profile")}
+						</NavLink>
 					</li>
 					<li className="link4">
-						<a href="/#index.html">{t("BuyCredit")}</a>
+						<NavLink
+							to="/buyCredit"
+							className={({ isActive }) =>
+								isActive ? activeStyle : undefined
+							}
+						>
+							{t("buyCredit")}
+						</NavLink>
 					</li>
 					<li className="link4">
-					{isLargeScreen ?"" :i18next.language === "en" ? (
+						{isLargeScreen ? (
+							""
+						) : i18next.language === "en" ? (
 							<button
 								className="language-btn"
 								onClick={() => {
@@ -99,11 +152,11 @@ const HiddenNavBar = () => {
 								/>
 								<span>English</span>
 							</button>
-						) }
+						)}
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

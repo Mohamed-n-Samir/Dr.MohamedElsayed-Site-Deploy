@@ -50,6 +50,29 @@
 	-ms-border-radius: 0 0.3rem 0.3rem 0;
 	-o-border-radius: 0 0.3rem 0.3rem 0;
 	cursor: pointer;
+	transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	-o-transform: scale(1) !important;
 }
+
+/* second Header */
+
+.after-header{
+	color: white;
+	font-size: 1.4rem;
+}
+
+.after-header span:first-child{
+	opacity: 0.7 ;
+}
+
+.after-header span:first-child:hover {
+	cursor: pointer;
+	color:var(--orange-color);
+	opacity: 1 ;
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////////// */

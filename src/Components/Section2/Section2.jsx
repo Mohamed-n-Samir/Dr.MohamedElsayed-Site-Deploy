@@ -1,19 +1,38 @@
 import React from "react";
-import Slider from "../SliderSection2/Slider";
+import Card from "../Card2/Card";
+import Slider from "../Slider/Slider";
+import cardData from "../../card2Data";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 import "./section2.css";
 
 const Section2 = () => {
+	const [t, i18n] = useTranslation();
+
 	return (
-		<section className="leatest-vlogs">
-			<div className="section-title center-block text-center">
-				<h2>Latest Vlogs</h2>
+		// {i18next.language === "en" && ""}
+		<section className="leatest-vlogs" style={{textAlign:"",}}>
+			<div className="section-title">
+				<h2>{t("latest vlogs")}</h2>
 				<span className="sectiontitle-design">
 					<span className="icons"></span>
 				</span>
-				<p>there's some lectures may help you</p>
+				<p>{t("after vlog head")}</p>
 			</div>
 			<div className="container">
-				<Slider />
+				<Slider
+					cardData={cardData}
+					Card={Card}
+					grabCursor={true}
+					spaceBetween={25}
+					loop={true}
+					autoplay={{
+						delay: 5000,
+						disableOnInteraction: false,
+					}}
+					navigation={false}
+					ButtonComp={null}
+				/>
 			</div>
 		</section>
 	);

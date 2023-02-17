@@ -1,11 +1,9 @@
-
-
 /* Icon*/
 
 .icon {
 	position: absolute;
-    width: fit-content;
-    right: 0;
+	width: fit-content;
+	right: 0;
 }
 
 #toggle {
@@ -84,23 +82,12 @@
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
 	z-index: 10000;
-    overflow-y: auto;
+	overflow-y: auto;
 }
 
 #sidebar ul {
 	position: relative;
 	margin-top: 5rem;
-}
-
-#sidebar ul li.link4 {
-	display: inline-block;
-	width: 100%;
-	padding: 1rem 4rem;
-    text-align: center;
-}
-
-#sidebar ul li.link4:hover {
-	background-color:var(--purple-color);
 }
 
 #sidebar ul li.link4 a {
@@ -109,26 +96,63 @@
 }
 
 #sidebar.active {
-    margin-left: 0;
+	margin-left: 0;
+}
+
+/* nav Links */
+
+.link4 {
+	display: block;
+	width: 90%;
+	margin: 1rem auto;
+	text-align: center;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.link4 a {
+	padding: 1rem 4rem;
+	width: 100%;
+	display: inline-block;
+}
+
+.link4 a.active-style {
+	background-color: var(--purple-color);
+	border-radius: 0.7rem 0.7rem;
+	-webkit-border-radius: 0.7rem 0.7rem;
+	-moz-border-radius: 0.7rem 0.7rem;
+	-ms-border-radius: 0.7rem 0.7rem;
+	-o-border-radius: 0.7rem 0.7rem;
+}
+
+.link4:hover:not(:last-child) {
+	background-color: var(--purple-color);
+	border-radius: 0.7rem 0.7rem;
+	-webkit-border-radius: 0.7rem 0.7rem;
+	-moz-border-radius: 0.7rem 0.7rem;
+	-ms-border-radius: 0.7rem 0.7rem;
+	-o-border-radius: 0.7rem 0.7rem;
 }
 
 /* Logo */
 
 .logo {
-    margin: 6rem auto;
-    width: fit-content;
-    display: block;
-
+	margin: 6rem auto;
+	width: fit-content;
+	display: block;
 }
 
 /* lang button */
 
 .link4 .language-btn {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	border: 0.2rem solid var(--purple-color);
 	height: 100%;
 	width: 50%;
-	padding: 0.5rem 1rem;
+	padding: 1rem 4rem;
 	border-radius: 0.3rem;
 	-webkit-border-radius: 0.3rem;
 	-moz-border-radius: 0.3rem;
