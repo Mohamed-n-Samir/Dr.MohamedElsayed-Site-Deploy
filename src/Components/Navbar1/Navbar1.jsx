@@ -53,6 +53,7 @@ const Navbar1 = () => {
 								</NavLink>
 							</li>
 							<li className="link">
+								{/* this is a comment */}
 								<NavLink
 									to="/Dr.MohamedElsayed-Site-Deploy/lectures"
 									className={({ isActive }) =>
