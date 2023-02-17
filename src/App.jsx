@@ -13,15 +13,16 @@ function App() {
 			<Navbar1/>
 			<Header/>
 			<Routes>
-				<Route path="Dr.MohamedElsayed-Site-Deploy//login" element={<div>login</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/profile" element={<div>profile</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/vlogs" element={<div>vlogs</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/blogs" element={<div>blogs</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/liveBroadcast" element={<div>live-broadcast</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/lectures" element={<div>lectures</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/profile" element={<div>profile</div>} exact />
-				<Route path="/Dr.MohamedElsayed-Site-Deploy/buyCredit" element={<div>buy-credit</div>} exact />
-				{["/Dr.MohamedElsayed-Site-Deploy/home", "/"].map((path, index) => (
+				<Route path="/login" element={<div>login</div>} exact />
+				{/* <Route path="/login" element={<div>login</div>} exact /> */}
+				<Route path="/profile" element={<div>profile</div>} exact />
+				<Route path="/vlogs" element={<div>vlogs</div>} exact />
+				<Route path="/blogs" element={<div>blogs</div>} exact />
+				<Route path="/liveBroadcast" element={<div>live-broadcast</div>} exact />
+				<Route path="/lectures" element={<div>lectures</div>} exact />
+				<Route path="/profile" element={<div>profile</div>} exact />
+				<Route path="/buyCredit" element={<div>buy-credit</div>} exact />
+				{["/home", "/"].map((path, index) => (
 					<Route path={path} element={<Home />} key={index} />
 				))}
 			</Routes>
